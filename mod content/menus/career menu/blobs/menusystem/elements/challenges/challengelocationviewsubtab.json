@@ -3,7 +3,12 @@
     "view": "menu3.basic.SubCategoryElement",
     "controller": "categoryitem",
     "data": {
-        "title": "$loc $formatstring UI_HERITAGE_SEASON_{$.Season}"
+        "title": {
+            "$if $eq($.Season,packs)": {
+                "$then": "$loc UI_MENU_PAGE_PROFILE_CHALLENGES_CHALLENGE_PACK_TITLE",
+                "$else": "$loc $formatstring UI_HERITAGE_SEASON_{$.Season}"
+            }
+        }
     },
     "children": [
         {

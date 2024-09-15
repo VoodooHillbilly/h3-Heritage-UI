@@ -32,6 +32,11 @@
                 ]
             }
         },
+        {                                                    "call": {
+            "onmenuframe": true,
+            "method": "setBackground",
+            "args": "$res images/backgrounds/menu_bg.jpg"
+        }},
         {
             "$include": {
                 "$path": "menusystem/elements/mastery/setmasterydata_action.json"

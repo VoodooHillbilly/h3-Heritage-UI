@@ -1,8 +1,7 @@
 {
-  "id": "$.Title",
+  "id": "$.Id",
   "controller": "contextitem",
   "view": "menu3.basic.MenuTileTall",
-  "row": -0.75,
   "nrows": 0.5,
   "ncols": 2,
   "data": {

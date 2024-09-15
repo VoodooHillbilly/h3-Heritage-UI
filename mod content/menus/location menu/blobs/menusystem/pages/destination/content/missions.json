@@ -68,7 +68,7 @@
                                                                         "TileSize": "tall"
                                                                     },
                                                                     "do": {
-                                                                        "$include": "menusystem/elements/contract/hit.json"
+                                                                        "$include": "menusystem/elements/contract/hit2.json"
                                                                     }
                                                                 }
                                                             }
@@ -99,7 +99,7 @@
                                                                                 "do": {
                                                                                     "$if $.UserCentricContract.Contract.Metadata.IsSeasonal": {
                                                                                         "$then": {
-                                                                                            "$include": "menusystem/elements/contract/hit.json"
+                                                                                            "$include": "menusystem/elements/contract/hit2.json"
                                                                                         }
                                                                                     }
                                                                                 }
@@ -125,7 +125,7 @@
                                                                                     }
                                                                                 },
                                                                                 "do": {
-                                                                                    "$include": "menusystem/elements/contract/hit.json"
+                                                                                    "$include": "menusystem/elements/contract/hit2.json"
                                                                                 }
                                                                             }
                                                                         }
@@ -138,7 +138,7 @@
                                                                                     "TileSize": "large"
                                                                                 },
                                                                                 "do": {
-                                                                                    "$include": "menusystem/elements/contract/hit.json"
+                                                                                    "$include": "menusystem/elements/contract/hit2.json"
                                                                                 }
                                                                             }
                                                                         }
@@ -151,7 +151,7 @@
                                                                                     "TileSize": "tall"
                                                                                 },
                                                                                 "do": {
-                                                                                    "$include": "menusystem/elements/contract/hit.json"
+                                                                                    "$include": "menusystem/elements/contract/hit2.json"
                                                                                 }
                                                                             }
                                                                         }
@@ -164,7 +164,7 @@
                                                                                     "TileSize": "tall"
                                                                                 },
                                                                                 "do": {
-                                                                                    "$include": "menusystem/elements/contract/hit.json"
+                                                                                    "$include": "menusystem/elements/contract/hit2.json"
                                                                                 }
                                                                             }
                                                                         }
@@ -177,7 +177,7 @@
                                                                                     "TileSize": "small"
                                                                                 },
                                                                                 "do": {
-                                                                                    "$include": "menusystem/elements/contract/hit.json"
+                                                                                    "$include": "menusystem/elements/contract/hit2.json"
                                                                                 }
                                                                             }
                                                                         }
@@ -216,12 +216,12 @@
                                                                                                     "$datacontext": {
                                                                                                         "in": "$.@parent.",
                                                                                                         "datavalues": {
-                                                                                                            "TileSize": "small",
+                                                                                                            "TileSize": "large",
                                                                                                             "EngineMode": "$."
                                                                                                         },
                                                                                                         "do": {
                                                                                                             "$include": {
-                                                                                                                "$path": "menusystem/elements/contract/hit.json"
+                                                                                                                "$path": "menusystem/elements/contract/hit2.json"
                                                                                                             }
                                                                                                         }
                                                                                                     }
@@ -238,7 +238,7 @@
                                                                                         },
                                                                                         "do": {
                                                                                             "$include": {
-                                                                                                "$path": "menusystem/elements/contract/hit.json"
+                                                                                                "$path": "menusystem/elements/contract/hit2.json"
                                                                                             }
                                                                                         }
                                                                                     }
@@ -264,114 +264,136 @@
                                     "$include": "menusystem/data/ispeacock.json"
                                 },
                                 "$then":   {
-                                    "id": "category_esc_missions",
-                                    "view": "menu3.basic.SubCategoryElement",
-                                    "controller": "categoryitem",
-                                    "row": -1.0,
-                                    "data": {
-                                        "title": "$loc $formatstring UI_HERITAGE_ESC"
-                                    },
-                                    "children": [
+                                    "$switch $.Location.Id": [
                                         {
-                                            "controller": "group",
-                                            "row": 0.0,
-                                            "layoutchildren": true,
-                                            "nrows": 3,
-                                            "ncols": 10,
-                                            "children": [
-                                                {
-                                                    "controller": "list",
-                                                    "view": "menu3.containers.ScrollingListContainer",
-                                                    "id": "$formatstring {$.Location.Id}_container",
-                                                    "nrows": 3,
-                                                    "ncols": 10,
-                                                    "direction": "horizontal",
-                                                    "data": {
-                                                        "direction": "horizontal",
-                                                        "overflowscrolling": "0.3"
-                                                    },
-                                                    "children": {
-                                                        "$mergearrays": [
-                                                            {
-                                                                "$if": {
-                                                                    "$condition": {
-                                                                        "$and": [
-                                                                            "$not $isnullorempty $.@parent.VRTutorial",
-                                                                            "$isvractive"
-                                                                        ]
-                                                                    },
-                                                                    "$then": {
-                                                                        "$datacontext": {
-                                                                            "in": "$.@parent.VRTutorial",
-                                                                            "datavalues": {
-                                                                                "TileSize": "small"
-                                                                            },
-                                                                            "do": {
-                                                                                "$include": "menusystem/elements/contract/hit.json"
-                                                                            }
-                                                                        }
-                                                                    }
-                                                                }
+                                            "case": "LOCATION_PARENT_SNUG",
+                                            "return": true
+                                        },
+                                        {
+                                            "case": "LOCATION_PARENT_AUSTRIA",
+                                            "return": true
+                                        },
+                                        {
+                                            "case": "LOCATION_PARENT_SALTY",
+                                            "return": true
+                                        },
+                                        {
+                                            "case": "LOCATION_PARENT_CAGED",
+                                            "return": true
+                                        },
+                                        {
+                                            "default": {
+                                                            "id": "category_esc_missions",
+                                                            "view": "menu3.basic.SubCategoryElement",
+                                                            "controller": "categoryitem",
+                                                            "row": -1.0,
+                                                            "data": {
+                                                                "title": "$loc $formatstring UI_HERITAGE_ESC"
                                                             },
-                                                            {
-                                                                "$each $.SubLocationMissionsData": {
+                                                            "children": [
+                                                                {
                                                                     "controller": "group",
-                                                                    "view": "menu3.containers.ListContainer",
-                                                                    "id": "$formatstring {$.SubLocationMissionsData}_container",
+                                                                    "row": 0.0,
                                                                     "layoutchildren": true,
                                                                     "nrows": 3,
-                                                                    "ncols": 8,
-                                                                    "direction": "horizontal",
-                                                                    "data": {
-                                                                        "direction": "horizontal",
-                                                                        "headlinetitle": "$loc $formatstring UI_{$.SubLocationMissionsData}_TITLE"
-                                                                    },
-                                                                    "children": {
-                                                                        "$mergearrays": [
-                                                                            {
-                                                                                "$each $.EscalationMissions": {
-                                                                                    "$datacontext": {
-                                                                                        "in": "$.",
-                                                                                        "datavalues": {
-                                                                                            "TileSize": "tall"
-                                                                                        },
-                                                                                        "do": {
-                                                                                            "$if $.UserCentricContract.Contract.Metadata.IsSeasonal": {
-                                                                                                "$then": {
-                                                                                                    "$include": "menusystem/elements/contract/hit.json"
-                                                                                                }
-                                                                                            }
-                                                                                        }
-                                                                                    }
-                                                                                }
+                                                                    "ncols": 10,
+                                                                    "children": [
+                                                                        {
+                                                                            "controller": "list",
+                                                                            "view": "menu3.containers.ScrollingListContainer",
+                                                                            "id": "$formatstring {$.Location.Id}_container",
+                                                                            "nrows": 3,
+                                                                            "ncols": 10,
+                                                                            "direction": "horizontal",
+                                                                            "data": {
+                                                                                "direction": "horizontal",
+                                                                                "overflowscrolling": "0.3"
                                                                             },
-                                                                            {
-                                                                                "$each $.EscalationMissions": {
-                                                                                    "$datacontext": {
-                                                                                        "in": "$.",
-                                                                                        "datavalues": {
-                                                                                            "TileSize": "small"
-                                                                                        },
-                                                                                        "do": {
-                                                                                            "$if $not $.UserCentricContract.Contract.Metadata.IsSeasonal": {
-                                                                                                "$then": {
-                                                                                                    "$include": "menusystem/elements/contract/hit.json"
+                                                                            "children": {
+                                                                                "$mergearrays": [
+                                                                                    {
+                                                                                        "$if": {
+                                                                                            "$condition": {
+                                                                                                "$and": [
+                                                                                                    "$not $isnullorempty $.@parent.VRTutorial",
+                                                                                                    "$isvractive"
+                                                                                                ]
+                                                                                            },
+                                                                                            "$then": {
+                                                                                                "$datacontext": {
+                                                                                                    "in": "$.@parent.VRTutorial",
+                                                                                                    "datavalues": {
+                                                                                                        "TileSize": "small"
+                                                                                                    },
+                                                                                                    "do": {
+                                                                                                        "$include": "menusystem/elements/contract/hit2.json"
+                                                                                                    }
                                                                                                 }
                                                                                             }
                                                                                         }
+                                                                                    },
+                                                                                    {
+                                                                                        "$each $.SubLocationMissionsData": {
+                                                                                            "controller": "group",
+                                                                                            "view": "menu3.containers.ListContainer",
+                                                                                            "id": "$formatstring {$.SubLocationMissionsData}_container",
+                                                                                            "layoutchildren": true,
+                                                                                            "nrows": 3,
+                                                                                            "ncols": 8,
+                                                                                            "direction": "horizontal",
+                                                                                            "data": {
+                                                                                                "direction": "horizontal",
+                                                                                                "headlinetitle": "$loc $formatstring UI_{$.SubLocationMissionsData}_TITLE"
+                                                                                            },
+                                                                                            "children": {
+                                                                                                "$mergearrays": [
+                                                                                                    {
+                                                                                                        "$each $.EscalationMissions": {
+                                                                                                            "$datacontext": {
+                                                                                                                "in": "$.",
+                                                                                                                "datavalues": {
+                                                                                                                    "TileSize": "tall"
+                                                                                                                },
+                                                                                                                "do": {
+                                                                                                                    "$if $.UserCentricContract.Contract.Metadata.IsSeasonal": {
+                                                                                                                        "$then": {
+                                                                                                                            "$include": "menusystem/elements/contract/hit2.json"
+                                                                                                                        }
+                                                                                                                    }
+                                                                                                                }
+                                                                                                            }
+                                                                                                        }
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "$each $.EscalationMissions": {
+                                                                                                            "$datacontext": {
+                                                                                                                "in": "$.",
+                                                                                                                "datavalues": {
+                                                                                                                    "TileSize": "small"
+                                                                                                                },
+                                                                                                                "do": {
+                                                                                                                    "$if $not $.UserCentricContract.Contract.Metadata.IsSeasonal": {
+                                                                                                                        "$then": {
+                                                                                                                            "$include": "menusystem/elements/contract/hit2.json"
+                                                                                                                        }
+                                                                                                                    }
+                                                                                                                }
+                                                                                                            }
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        }
                                                                                     }
-                                                                                }
+                                                                                ]
                                                                             }
-                                                                        ]
-                                                                    }
+                                                                        }
+                                                                    ]
                                                                 }
-                                                            }
-                                                        ]
-                                                    }
-                                                }
-                                            ]
+                                                                
+                                                            ]
+                                                        }
                                         }
-                                        
                                     ]
                                 },
                                 "$else": {
@@ -425,7 +447,7 @@
                                                                                                 "TileSize": "small"
                                                                                             },
                                                                                             "do": {
-                                                                                                "$include": "menusystem/elements/contract/hit.json"
+                                                                                                "$include": "menusystem/elements/contract/hit2.json"
                                                                                             }
                                                                                         }
                                                                                     }
@@ -456,7 +478,7 @@
                                                                                                         "do": {
                                                                                                             "$if $.UserCentricContract.Contract.Metadata.IsSeasonal": {
                                                                                                                 "$then": {
-                                                                                                                    "$include": "menusystem/elements/contract/hit.json"
+                                                                                                                    "$include": "menusystem/elements/contract/hit2.json"
                                                                                                                 }
                                                                                                             }
                                                                                                         }
@@ -473,7 +495,7 @@
                                                                                                         "do": {
                                                                                                             "$if $not $.UserCentricContract.Contract.Metadata.IsSeasonal": {
                                                                                                                 "$then": {
-                                                                                                                    "$include": "menusystem/elements/contract/hit.json"
+                                                                                                                    "$include": "menusystem/elements/contract/hit2.json"
                                                                                                                 }
                                                                                                             }
                                                                                                         }
@@ -2743,6 +2765,59 @@
                                                                                         "pressable": false,
                                                                                         "data": {
                                                                                             "title": "$loc UI_CONTRACT_SKITTLEBOMB_TITLE",
+                                                                                            "header": "$loc UI_HERITAGE_ET",
+                                                                                            "typeicon": "elusive"
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        },
+                                                                        "deselect": {
+                                                                            "replace-children": {
+                                                                                "target": "headline_container",
+                                                                                "children": []
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "view": "menu3.basic.MenuTileTall",
+                                                                    "row": 0,
+                                                                    "col": 4,
+                                                                    "nrows": 3,
+                                                                    "ncols": 4,
+                                                                    "data": {
+                                                                        "title": "$loc UI_CONTRACT_PENICILLIN_TITLE",
+                                                                        "header": "$loc UI_HERITAGE_ET",
+                                                                        "icon": "elusive",
+                                                                        "image": "$res images/contracts/elusive/S3_Penicillin/Title.jpg"
+                                                                    },
+                                                                    "actions": {
+                                                                        "accept": [
+                                                                            {
+                                                                                "link": {
+                                                                                    "page": "planning",
+                                                                                    "args": {
+                                                                                        "url": "planning",
+                                                                                        "args": {
+                                                                                            "contractid": "d4a5f21f-3e4d-4226-9769-0fbe2a5e8639",
+                                                                                            "resetescalation": false
+                                                                                        },
+                                                                                        "contractid": "d4a5f21f-3e4d-4226-9769-0fbe2a5e8639"
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        ],
+                                                                        "select": {
+                                                                            "replace-children": {
+                                                                                "target": "headline_container",
+                                                                                "children": [
+                                                                                    {
+                                                                                        "view": "menu3.basic.HeadlineElement",
+                                                                                        "selectable": false,
+                                                                                        "pressable": false,
+                                                                                        "data": {
+                                                                                            "title": "$loc UI_CONTRACT_PENICILLIN_TITLE",
                                                                                             "header": "$loc UI_HERITAGE_ET",
                                                                                             "typeicon": "elusive"
                                                                                         }

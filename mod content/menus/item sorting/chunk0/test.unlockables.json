@@ -757,6 +757,11 @@
         "Properties": {
         }
     },
+    "PROP_MELEE_DURIAN_EMETICGAS":{
+        "Subtype": "poison",
+        "Properties": {
+        }
+    },
     "PROP_TOOL_GOLD_BAR_SMALL":{
         "Subtype": "distraction",
         "Properties": {
