@@ -713,6 +713,24 @@
         "OrderIndex": 31
     }
 },
+"TOKEN_OUTFIT_REWARD_HERO_SB_SUIT":{
+    "Subtype": "S3",
+    "Properties": {
+        "OrderIndex": 32
+    }
+},
+"TOKEN_OUTFIT_REWARD_HERO_PEN_FIGHT_SUIT":{
+    "Subtype": "S3",
+    "Properties": {
+        "OrderIndex": 34
+    }
+},
+"TOKEN_OUTFIT_REWARD_HERO_PEN_COAT_SUIT":{
+    "Subtype": "S3",
+    "Properties": {
+        "OrderIndex": 35
+    }
+},
 "TOKEN_OUTFIT_HITMANSUIT":{
     "Subtype": "S0",
     "Properties": {

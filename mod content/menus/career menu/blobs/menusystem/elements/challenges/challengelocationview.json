@@ -38,6 +38,9 @@
                         },
                         {
                             "$include": "menusystem/elements/challenges/data/data_challengelocation_season3.json"
+                        },
+                        {
+                            "$include": "menusystem/elements/challenges/data/data_challengelocation_packs.json"
                         }
                     ]
                 },

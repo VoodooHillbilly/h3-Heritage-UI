@@ -2,6 +2,13 @@
     "id": "gamemodearcade_root",
     "controller": "list",
     "actions": {
+        "activated": {
+            "call": {
+                "onmenuframe": true,
+                "method": "setBackground",
+                "args": "$res images/backgrounds/images/backgrounds/menu_bg.jpg"
+            }
+        }
     },
     "children": [
         {
@@ -16,6 +23,15 @@
                     "icon": "mission"
                 }
             },
+            "actions": {
+                "activated": {
+                    "call": {
+                        "onmenuframe": true,
+                        "method": "setBackground",
+                        "args": "$res images/backgrounds/images/backgrounds/menu_bg.jpg"
+                    }
+                }
+            },
             "children": [
                 {
                     "view": "menu3.basic.CategoryElement",
@@ -23,6 +39,15 @@
                     "data": {
                         "title": "$loc UI_ARCADE_TITLE",
                         "icon": "arcademode"
+                    },
+                    "actions": {
+                        "activated": {
+                            "call": {
+                                "onmenuframe": true,
+                                "method": "setBackground",
+                                "args": "$res images/backgrounds/images/backgrounds/menu_bg.jpg"
+                            }
+                        }
                     },
                     "children": [
                         {
@@ -34,6 +59,15 @@
                                 "direction": "horizontal"
                             },
                             "row": 4.22,
+                            "actions": {
+                                "activated": {
+                                    "call": {
+                                        "onmenuframe": true,
+                                        "method": "setBackground",
+                                        "args": "$res images/backgrounds/images/backgrounds/menu_bg.jpg"
+                                    }
+                                }
+                            },
                             "col": 0,
                             "selectable": false,
                             "pressable": false,

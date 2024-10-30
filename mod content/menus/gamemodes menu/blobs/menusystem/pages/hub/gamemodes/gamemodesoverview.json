@@ -15,7 +15,7 @@
             "data": {
                 "direction": "horizontal"
             },
-            "row": 1.75,
+            "row": 1,
             "nrows": 3,
             "header": "UI_HERITAGE_GAMEMODES",
             "ncols": 10,
@@ -66,7 +66,6 @@
                                     "children": [
                                         {
                                             "controller": "container",
-                                            "row": -0.75,
                                             "children": [
                                                 {
                                                     "$include": {
@@ -135,7 +134,19 @@
                             "Title": "$loc UI_ARCADE_TITLE",
                             "Icon": "arcademode",
                             "image": "$res images/backgrounds/gamemode_arcade.jpg",
-                            "Category": "Arcade"
+                            "Id": "gamemodes_category_arcade",
+                            "ExtraActions": {
+                                "accept": {
+                                    "link": {
+                                        "page": "gamemode_arcade",
+                                        "args": {
+                                            "url": "hitscategory",
+                                    "type": "Arcade",
+                                    "mode": "dataonly"
+                                        }
+                                    }
+                                }
+                            }
                         },
                         "do": {
                             "$mergeobjects": [
@@ -143,21 +154,6 @@
                                     "$include": {
                                         "$path": "menusystem/pages/careermenu/Gamemodestile.JSON"
                                     }
-                                },
-                                {
-                                    "children": [
-                                        {
-                                            "controller": "container",
-                                            "row": -0.75,
-                                            "children": [
-                                                {
-                                                    "$include": {
-                                                        "$path": "menusystem/elements/contract/contractshitcategoryloading.json"
-                                                    }
-                                                }
-                                            ]
-                                        }
-                                    ]
                                 }
                             ]
                         }

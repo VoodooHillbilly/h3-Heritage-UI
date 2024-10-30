@@ -196,6 +196,12 @@
         "OrderIndex": 7
     }
 },
+"TOKEN_OUTFIT_HERO_SUPERFAN":{
+    "Subtype": "S4",
+    "Properties": {
+        "OrderIndex": 8
+    }
+},
 "TOKEN_OUTFIT_REWARD_SNOWFESTIVAL_SUIT": {
     "Subtype": "S1",    
     "Properties": {
@@ -290,6 +296,12 @@
     "Subtype": "S1",
     "Properties": {
         "OrderIndex": 16
+    }
+},
+"TOKEN_OUTFIT_HERO_PLAGUEDOCTOR":{
+    "Subtype": "S1",
+    "Properties": {
+        "OrderIndex": 17
     }
 },
 "TOKEN_OUTFIT_NEWZEALAND_HERO_NEWZEALANDSUIT":{
@@ -538,7 +550,13 @@
         "OrderIndex": 14
     }
 },
-"TOKEN_OUTFIT_HERO_EASTER_SUIT":{
+"TOKEN_OUTFIT_ANCESTRAL_HERO_SMOOTHSNAKESUIT":{
+    "Subtype": "S3",
+    "Properties": {
+        "OrderIndex": 15
+    }
+},
+"TOKEN_OUTFIT_HERO_SUMMER_SUIT":{
     "Subtype": "S3",
     "Properties": {
         "OrderIndex": 16
@@ -547,16 +565,10 @@
 "TOKEN_OUTFIT_HERO_EASTER_RAVER_SUIT":{
     "Subtype": "S3",
     "Properties": {
-        "OrderIndex": 15
-    }
-},
-"TOKEN_OUTFIT_ANCESTRAL_HERO_SMOOTHSNAKESUIT":{
-    "Subtype": "S3",
-    "Properties": {
         "OrderIndex": 17
     }
 },
-"TOKEN_OUTFIT_HERO_SUMMER_SUIT":{
+"TOKEN_OUTFIT_HERO_EASTER_SUIT":{
     "Subtype": "S3",
     "Properties": {
         "OrderIndex": 18
@@ -565,13 +577,13 @@
 "TOKEN_OUTFIT_REWARD_HERO_RAVING_SUIT":{
     "Subtype": "S3",
     "Properties": {
-        "OrderIndex": 19
+        "OrderIndex": 20
     }
 },
 "TOKEN_OUTFIT_REWARD_HERO_RUBYRUDE_SUIT":{
     "Subtype": "S3",
     "Properties": {
-        "OrderIndex": 20
+        "OrderIndex": 24
     }
 },
 "TOKEN_OUTFIT_REWARD_HERO_NEON_SUIT":{
@@ -580,28 +592,34 @@
         "OrderIndex": 21
     }
 },
-"TOKEN_OUTFIT_REWARD_HERO_DUCKY_SUIT":{
+"TOKEN_OUTFIT_TOMORROWLAND_DJSUIT_REWARD":{
     "Subtype": "S3",
     "Properties": {
         "OrderIndex": 22
     }
 },
-"TOKEN_OUTFIT_REWARD_HERO_HALLOWEENSANSPUMPKIN_SUIT":{
+"TOKEN_OUTFIT_REWARD_HERO_DUCKY_SUIT":{
+    "Subtype": "S3",
+    "Properties": {
+        "OrderIndex": 25
+    }
+},
+"TOKEN_OUTFIT_TOMORROWLAND_SUIT_REWARD":{
     "Subtype": "S3",
     "Properties": {
         "OrderIndex": 23
     }
 },
-"TOKEN_OUTFIT_NEWZEALAND_HERO_OPUNTIA_SUIT":{
-    "Subtype": "S3",
+"TOKEN_OUTFIT_REWARD_HERO_HALLOWEENSANSPUMPKIN_SUIT":{
+    "Subtype": "S2",
     "Properties": {
-        "OrderIndex": 24
+        "OrderIndex": 29
     }
 },
-"TOKEN_OUTFIT_REWARD_HERO_AGENT17_SUIT":{
-    "Subtype": "S3",
+"TOKEN_OUTFIT_NEWZEALAND_HERO_OPUNTIA_SUIT":{
+    "Subtype": "S2",
     "Properties": {
-        "OrderIndex": 25
+        "OrderIndex": 30
     }
 },
 "TOKEN_OUTFIT_HERO_BBW_SUIT":{
@@ -610,34 +628,52 @@
         "OrderIndex": 26
     }
 },
-"TOKEN_OUTFIT_TOMORROWLAND_SUIT_REWARD":{
-    "Subtype": "S3",
-    "Properties": {
-        "OrderIndex": 27
-    }
-},
 "TOKEN_OUTFIT_REWARD_HERO_PUBLICENEMY_SUIT":{
-    "Subtype": "S3",
+    "Subtype": "S2",
     "Properties": {
-        "OrderIndex": 28
+        "OrderIndex": 30
     }
 },
 "TOKEN_OUTFIT_HERO_H3_LEGACYREWARD_SUIT":{
     "Subtype": "S3",
     "Properties": {
-        "OrderIndex": 30
+        "OrderIndex": 29
     }
 },
 "TOKEN_OUTFIT_REWARD_HERO_CHRISTMASJUMPER_SUIT":{
     "Subtype": "S3",
     "Properties": {
-        "OrderIndex": 29
+        "OrderIndex": 28
     }
 },
 "TOKEN_OUTFIT_HERO_BUTCHER_SUIT":{
     "Subtype": "S3",
     "Properties": {
+        "OrderIndex": 30
+    }
+},
+"TOKEN_OUTFIT_REWARD_HERO_SB_SUIT":{
+    "Subtype": "S3",
+    "Properties": {
         "OrderIndex": 31
+    }
+},
+"TOKEN_OUTFIT_REWARD_HERO_SB_PATCH_SUIT":{
+    "Subtype": "S3",
+    "Properties": {
+        "OrderIndex": 32
+    }
+},
+"TOKEN_OUTFIT_REWARD_HERO_PEN_FIGHT_SUIT":{
+    "Subtype": "S3",
+    "Properties": {
+        "OrderIndex": 33
+    }
+},
+"TOKEN_OUTFIT_REWARD_HERO_PEN_COAT_SUIT":{
+    "Subtype": "S3",
+    "Properties": {
+        "OrderIndex": 34
     }
 },
 "TOKEN_OUTFIT_HITMANSUIT":{
@@ -706,52 +742,58 @@
         "OrderIndex": 10
     }
 },
-"TOKEN_OUTFIT_HERO_LIFE_SUIT":{
+"TOKEN_OUTFIT_REWARD_HERO_AGENT17_SUIT":{
     "Subtype": "S0",
     "Properties": {
         "OrderIndex": 11
     }
 },
-"TOKEN_OUTFIT_HERO_BIRTH_SUIT":{
+"TOKEN_OUTFIT_HERO_LIFE_SUIT":{
     "Subtype": "S0",
     "Properties": {
         "OrderIndex": 12
     }
 },
-"TOKEN_OUTFIT_HERO_DEATH_SUIT":{
+"TOKEN_OUTFIT_HERO_BIRTH_SUIT":{
     "Subtype": "S0",
     "Properties": {
         "OrderIndex": 13
     }
 },
-"TOKEN_OUTFIT_HERO_BLACKSPECIAL_SUIT":{
+"TOKEN_OUTFIT_HERO_DEATH_SUIT":{
     "Subtype": "S0",
     "Properties": {
         "OrderIndex": 14
     }
 },
-"TOKEN_OUTFIT_HERO_BLUESPECIAL_SUIT":{
+"TOKEN_OUTFIT_HERO_BLACKSPECIAL_SUIT":{
     "Subtype": "S0",
     "Properties": {
         "OrderIndex": 15
     }
 },
-"TOKEN_OUTFIT_HERO_GREENSPECIAL_SUIT":{
+"TOKEN_OUTFIT_HERO_BLUESPECIAL_SUIT":{
     "Subtype": "S0",
     "Properties": {
         "OrderIndex": 16
     }
 },
-"TOKEN_OUTFIT_HERO_REDSPECIAL_SUIT":{
+"TOKEN_OUTFIT_HERO_GREENSPECIAL_SUIT":{
     "Subtype": "S0",
     "Properties": {
         "OrderIndex": 17
     }
 },
-"TOKEN_OUTFIT_HERO_PURPLESPECIAL_SUIT":{
+"TOKEN_OUTFIT_HERO_REDSPECIAL_SUIT":{
     "Subtype": "S0",
     "Properties": {
         "OrderIndex": 18
+    }
+},
+"TOKEN_OUTFIT_HERO_PURPLESPECIAL_SUIT":{
+    "Subtype": "S0",
+    "Properties": {
+        "OrderIndex": 19
     }
 },
 "FIREARMS_HERO_PISTOL_TACTICAL_ICA_19":{
@@ -1019,6 +1061,11 @@
         "OrderIndex": 161
     }
 },
+"PROP_CONTAINER_SUITCASE_ICA_T":{
+    "Properties": {
+        "OrderIndex": 162
+    }
+},
 "FIREARMS_HERO_SMG_TAC_SMG":{
     "Properties": {
         "OrderIndex": 1
@@ -1134,6 +1181,11 @@
 "FIREARMS_HERO_SHOTGUN_SAWED_OFF_GLUTTONY":{
     "Properties": {
         "OrderIndex": 71
+    }
+},
+"FIREARMS_HERO_SHOTGUN_BARTOLI_12G_SAWED_OFF_GOLDEN":{
+    "Properties": {
+        "OrderIndex": 72
     }
 },
 "FIREARMS_HERO_SHOTGUN_BARTOLI_12G_HEROVERSION":{
@@ -1456,6 +1508,16 @@
         "OrderIndex": 131
     }
 },
+"PROP_DEVICE_ICA_MODULAR_PROXIMITY_MICRO_TASER":{
+    "Properties": {
+        "OrderIndex": 132
+    }
+},
+"PROP_DEVICE_EVERGREEN_OILSPILL_CANISTER":{
+    "Properties": {
+        "OrderIndex": 141
+    }
+},
 "PROP_DEVICE_ICA_MODULAR_REMOTE_EXPLOSIVE":{
     "Properties": {
         "OrderIndex": 1
@@ -1516,6 +1578,11 @@
         "OrderIndex": 111
     }
 },
+"PROP_DEVICE_ICA_RUBBERDUCK_REMOTE_EXPLOSIVE_T":{
+    "Properties": {
+        "OrderIndex": 112
+    }
+},
 "PROP_DEVICE_ICA_C4_REMOTE_EXPLOSIVE":{
     "Properties": {
         "OrderIndex": 121
@@ -1574,6 +1641,11 @@
 "PROP_DEVICE_LIL_FLASHY_REMOTE_FLASH":{
     "Properties": {
         "OrderIndex": 231
+    }
+},
+"PROP_GADGET_ROBOT_FLASH_SAMBUCA":{
+    "Properties": {
+        "OrderIndex": 232
     }
 },
 "PROP_DEVICE_ICA_MODULAR_PROXIMITY_EXPLOSIVE":{
@@ -1661,6 +1733,11 @@
         "OrderIndex": 401
     }
 },
+"PROP_EXPLOSIVE_ICA_IMPACT":{
+    "Properties": {
+        "OrderIndex": 402
+    }
+},
 "PROP_EXPLOSIVE_GRENADE_FLASH":{
     "Properties": {
         "OrderIndex": 411
@@ -1669,6 +1746,11 @@
 "PROP_EXPLOSIVE_GRENADE_FLASH_S3":{
     "Properties": {
         "OrderIndex": 421
+    }
+},
+"PROP_EXPLOSIVE_GRENADE_FLASH_TOMORROWLAND":{
+    "Properties": {
+        "OrderIndex": 422
     }
 },
 "PROP_DEVICE_PROXIMITY_FLASH_WRATH":{
@@ -1704,6 +1786,11 @@
 "PROP_DEVICE_EXPLODING_FOUNTAIN_PEN_ANCESTRAL":{
     "Properties": {
         "OrderIndex": 491
+    }
+},
+"PROP_EXPLOSIVE_PEN_SAMBUCA":{
+    "Properties": {
+        "OrderIndex": 492
     }
 },
 "PROP_DEVICE_ICA_TRIPWIRE_EXPLOSIVE":{
@@ -1873,6 +1960,12 @@
         "OrderIndex": 91
     }
 },
+"PROP_MELEE_DURIAN_EMETICGAS":{
+    "Subtype": "poison",
+    "Properties": {
+        "OrderIndex": 102
+    }
+},
 "PROP_GAS_GRENADE_EMETIC_FROG":{
     "Subtype": "poison",
     "Properties": {
@@ -1969,6 +2062,12 @@
         "OrderIndex": 241
     }
 },
+"PROP_MELEE_BLUE_EASTEREGG_PACIFYGAS":{
+    "Subtype": "poison",
+    "Properties": {
+        "OrderIndex": 251
+    }
+},
 "TOKEN_FIBERWIRE":{
     "Properties": {
         "OrderIndex": 1
@@ -1989,6 +2088,11 @@
         "OrderIndex": 31
     }
 },
+"PROP_MELEE_BLACK_PHONE_CORD_SAMBUCA":{
+    "Properties": {
+        "OrderIndex": 32
+    }
+},
 "PROP_MELEE_FISHING_LINE":{
     "Properties": {
         "OrderIndex": 41
@@ -2007,6 +2111,11 @@
 "PROP_MELEE_LEATHERBELT_ASYLUM":{
     "Properties": {
         "OrderIndex": 71
+    }
+},
+"PROP_MELEE_STRENGTHBAND_PENICILLIN":{
+    "Properties": {
+        "OrderIndex": 72
     }
 },
 "PROP_MELEE_COMBAT_KNIFE":{
@@ -2064,6 +2173,11 @@
         "OrderIndex": 181
     }
 },
+"PROP_MELEE_BURIAL_DAGGER":{
+    "Properties": {
+        "OrderIndex": 182
+    }
+},
 "PROP_MELEE_PITON":{
     "Properties": {
         "OrderIndex": 191
@@ -2072,6 +2186,12 @@
 "PROP_MELEE_ICE_PICK":{
     "Properties": {
         "OrderIndex": 201
+    }
+},
+"PROP_MELEE_UNICORNHORN":{
+    "Type": "weapon",
+    "Properties": {
+        "OrderIndex": 202
     }
 },
 "PROP_MELEE_BUTCHERS_MEATHOOK":{
@@ -2139,6 +2259,12 @@
         "OrderIndex": 321
     }
 },
+"PROP_MELEE_PINOTNOIR":{
+    "Type": "weapon",
+    "Properties": {
+        "OrderIndex": 322
+    }
+},
 "PROP_MELEE_SHURIKEN":{
     "Properties": {
         "OrderIndex": 391
@@ -2146,7 +2272,12 @@
 },
 "PROP_MELEE_SHURIKEN_BAT":{
     "Properties": {
-        "OrderIndex": 341
+        "OrderIndex": 392
+    }
+},
+"PROP_MELEE_SHURIKEN_LP_TOMORROWLAND":{
+    "Properties": {
+        "OrderIndex": 393
     }
 },
 "PROP_MELEE_CRYSTALBALL":{
@@ -2157,6 +2288,11 @@
 "PROP_MELEE_SHOWGLOBE":{
     "Properties": {
         "OrderIndex": 361
+    }
+},
+"PROP_MELEE_KETTLEBELL_PENICILLIN":{
+    "Properties": {
+        "OrderIndex": 362
     }
 },
 "PROP_MELEE_MUFFIN_BLUEBERRY":{
@@ -2244,6 +2380,11 @@
         "OrderIndex": 531
     }
 },
+"PROP_MELEE_BASEBALLBAT_PURPLE":{
+    "Properties": {
+        "OrderIndex": 532
+    }
+},
 "PROP_MELEE_MACE":{
     "Properties": {
         "OrderIndex": 541
@@ -2257,6 +2398,11 @@
 "PROP_MELEE_CANE_GREED":{
     "Properties": {
         "OrderIndex": 561
+    }
+},
+"PROP_MELEE_CANE_PENICILLIN":{
+    "Properties": {
+        "OrderIndex": 562
     }
 }
 }
