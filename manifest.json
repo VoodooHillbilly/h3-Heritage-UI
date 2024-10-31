@@ -2190,5 +2190,6 @@
 			]
 		}
 	],
-	"blobsFolders": ["mod content/base/blobs"]
+	"blobsFolders": ["mod content/base/blobs"],
+	"contentFolders": ["mod content/base/content"]
 }
